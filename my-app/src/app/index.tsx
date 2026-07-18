@@ -154,11 +154,12 @@ export default function LoginScreen() {
             </Pressable>
           </Link>
         </View>
+        
+        <Text style={styles.footerText}>Secure Login Process</Text>
 
       </View>
       </ScrollView>
 
-      <Text style={styles.footerText}>Secure Login Process</Text>
     </KeyboardAvoidingView>
   );
 }
@@ -188,5 +189,5 @@ const styles = StyleSheet.create({
   signupText: { fontSize: 15, color: '#64748B', fontWeight: '500' },
   signupLink: { fontSize: 15, color: '#5F35C7', fontWeight: '700' },
   
-  footerText: { position: 'absolute', bottom: 40, width: '100%', textAlign: 'center', color: '#94A3B8', fontSize: 13, fontWeight: '500' }
+  footerText: { marginTop: 40, width: '100%', textAlign: 'center', color: '#94A3B8', fontSize: 13, fontWeight: '500' }
 });
