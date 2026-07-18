@@ -12,7 +12,7 @@ export default function SOSAlertsView({ token, host }) {
   const fetchAlerts = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/sos`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/sos`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();

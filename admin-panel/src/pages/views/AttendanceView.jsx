@@ -11,7 +11,7 @@ export default function AttendanceView({ token, host }) {
   const fetchAttendance = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/attendance`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/attendance`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();

@@ -12,7 +12,7 @@ export default function LeaveRequestsView({ token, host }) {
   const fetchLeaves = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/leaves`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/leaves`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -26,7 +26,7 @@ export default function LeaveRequestsView({ token, host }) {
 
   const handleUpdateStatus = async (id, status) => {
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/leaves/update`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/leaves/update`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ id, status })

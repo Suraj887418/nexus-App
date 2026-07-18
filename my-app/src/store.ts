@@ -4,11 +4,11 @@ import { Platform } from 'react-native';
 
 import Constants from 'expo-constants';
 
-// Dynamically get the IP address of the Expo bundler machine
-const hostUri = Constants?.expoConfig?.hostUri;
-const ip = hostUri ? hostUri.split(':')[0] : '192.168.1.21';
+// Dynamically get the IP address of the Expo bundler machine (Disabled for production)
+// const hostUri = Constants?.expoConfig?.hostUri;
+// const ip = hostUri ? hostUri.split(':')[0] : '192.168.1.21';
 
-export const API_BASE_URL = `http://${ip}:3000`;
+export const API_BASE_URL = 'https://nexus-app-wj39.onrender.com';
 
 interface GlobalState {
   userEmail: string;

@@ -12,7 +12,7 @@ export default function OverviewView({ token, host, setActiveTab }) {
   const fetchStats = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/overview`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/overview`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();

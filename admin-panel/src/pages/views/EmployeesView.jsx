@@ -13,7 +13,7 @@ export default function EmployeesView({ token, host }) {
   const fetchUsers = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/users`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/users`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -95,7 +95,7 @@ function EmployeeModal({ user, onClose, token, host, onVerify }) {
   useEffect(() => {
     const fetchUserCases = async () => {
       try {
-        const res = await fetch(`http://${host}:3000/api/admin/cases`, {
+        const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/cases`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         const data = await res.json();

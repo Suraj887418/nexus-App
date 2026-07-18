@@ -17,7 +17,7 @@ export default function Login() {
     try {
       // Using window.location.hostname to support access from other devices on the same network
       const host = window.location.hostname === 'localhost' ? '127.0.0.1' : window.location.hostname;
-      const response = await fetch(`http://${host}:3000/api/admin/login`, {
+      const response = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })

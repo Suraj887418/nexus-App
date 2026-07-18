@@ -15,7 +15,7 @@ export default function CasesView({ token, host }) {
   const fetchCases = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/cases`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/cases`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -30,7 +30,7 @@ export default function CasesView({ token, host }) {
   const handleAssign = async (caseNumber, email) => {
     if (!email) return;
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/assign-case`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/assign-case`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ case_number: caseNumber, assigned_to_email: email })
@@ -48,7 +48,7 @@ export default function CasesView({ token, host }) {
   const handleAddCase = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://${host}:3000/api/admin/cases`, {
+      const res = await fetch(`https://nexus-app-wj39.onrender.com/api/admin/cases`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify(newCase)
