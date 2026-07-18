@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "5b918de4-1163-40be-b238-f0e96bbadf0b"
+      }
+    },
+    "android": {
+      "package": "com.nexuscorp.app"
+    }
+  }
+}

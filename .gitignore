@@ -1,0 +1,16 @@
+# Ignore all environment variables globally
+**/.env
+**/.env.*
+.env
+.env.local
+
+# Node
+**/node_modules/
+node_modules/
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# Uploads
+backend/uploads/

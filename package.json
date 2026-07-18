@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "cd my-app && npm start",
+    "server": "cd backend && node server.js",
+    "dev": "start cmd /k \"npm run server\" && start cmd /k \"cd admin-panel && npm run dev\" && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../my-app && npm install"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^7.3.4",
+    "@react-navigation/native-stack": "^7.17.6",
+    "react-native-gesture-handler": "^3.0.2",
+    "react-native-safe-area-context": "^5.8.0",
+    "react-native-screens": "^4.25.2"
+  }
+}
