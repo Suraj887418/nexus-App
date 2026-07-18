@@ -42,7 +42,7 @@ Welcome to the **NEXUS CORP Smart Employee Management System**, a complete Full-
 
 *   **🌐 Live Admin Panel:** https://nexus-app-steel.vercel.app
 *   **🔌 Live Backend API:** https://nexus-app-wj39.onrender.com
-*   **📱 Download APK for Android:** [Click here to Download APK](https://expo.dev/accounts/shiv7081/projects/nexus-corp-app/builds/03296104-69ca-433a-9e8c-b6b472ef68bb)
+*   **📱 Download APK for Android:** [Click here to Download APK](https://expo.dev/accounts/shiv7081/projects/nexus-corp-app/builds/fb4018e2-995e-4263-b24d-b059ce62bd2d)
 
 ---
 
