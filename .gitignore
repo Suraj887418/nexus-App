@@ -12,5 +12,5 @@ npm-debug.log
 # Mac
 .DS_Store
 
-# Uploads
+# Upload
 backend/uploads/
